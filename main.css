@@ -1,1 +1,9 @@
-﻿
+﻿html, body {
+  height: 100px;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 650px;
+  background: green;
+}

@@ -5,5 +5,5 @@
 .hero {
   height: 100vh;
   min-height: 650px;
-  background: green;
+  background: url("./image/bg/hero.jpg") center center / cover no-repeat;
 }

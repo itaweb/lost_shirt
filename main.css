@@ -2,6 +2,13 @@
   height: 100px;
 }
 
+body {
+  font: 16px / 1.42 "Roboto", Arial, sans-serif;
+  color:#212121;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .hero {
   height: 100vh;
   min-height: 650px;
@@ -19,8 +26,7 @@
 .mail {
   text-decoration: none;
   text-align: center;
-  font-size: 16px;
-  color: #212121;
+  color: inherit;
 }
 
 .mail__title {
@@ -30,6 +36,5 @@
 .mail__content {
   background: #212121;
   color: #ffbc2f;
-  font-size: 16px;
   padding: 5px 10px;
 }

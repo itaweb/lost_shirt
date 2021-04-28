@@ -1,10 +1,19 @@
-﻿html, body {
+﻿@font-face {
+  font-family: "alegreya";
+  src: url("./font/alegreyasanssc-black-webfont.woff") format("woff2"),
+    url("./font/alegreyasanssc-black-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
   height: 100px;
 }
 
 body {
   font: 16px / 1.42 "Roboto", Arial, sans-serif;
-  color:#212121;
+  color: #212121;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,6 +22,7 @@ body {
   height: 100vh;
   min-height: 650px;
   background: url("./image/bg/hero.jpg") center center / cover no-repeat;
+  position: relative;
 }
 
 .header {
@@ -37,4 +47,48 @@ body {
   background: #212121;
   color: #ffbc2f;
   padding: 5px 10px;
+}
+
+.fade-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1140px;
+  height: 72%;
+}
+
+.fade-slider__item {
+  background: url("./image/content/hero/slider_pic_1.png") center center /
+    contain no-repeat;
+  height: 100%;
+}
+
+.lined-text {
+  font-family: "alegreya", Arial, sans-serif;
+  color: #fff;
+  font-size: 63px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-164%, -52%);
+}
+
+.lined-text__word {
+  background: #000;
+  padding: 0 17px 8px;
+  margin-top: -7px;
+}
+
+.lined-text__word--color-yellow {
+  color:#ffbc2f;
+}
+
+.lined-text__word:nth-child(2n){
+  margin-left: 8px;
 }

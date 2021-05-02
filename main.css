@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+:root {
+  --yellow: #ffbc2f;
+  --red: #d82727;
+  --black: #1b1b1b;
+  --titlesFont: 'Yanone Kaffeesatz', Arial,  sans-serif;
+}
+
 html,
 body {
   height: 100px;
@@ -61,7 +68,7 @@ ul > li {
 
 .mail__content {
   background: #212121;
-  color: #ffbc2f;
+  color: var(--yellow);
   padding: 5px 10px;
 }
 
@@ -110,7 +117,7 @@ ul > li {
 }
 
 .lined-text__word--color-yellow {
-  color: #ffbc2f;
+  color: var(--yellow);
 }
 
 .lined-text__word:nth-child(2n) {
@@ -135,7 +142,7 @@ ul > li {
 }
 
 .filter__link {
-  font-family: 'Yanone Kaffeesatz', Arial,  sans-serif;
+  font-family: var(--titlesFont);
   text-transform: uppercase;
   padding: 3px 21px;
   color: #1b1b1b;
@@ -146,10 +153,10 @@ ul > li {
 }
 
 .filter__link:hover {
-  color: #d82727; 
+  color: var(--red); 
 }
 
 .filter__item--active .filter__link {
-  color: #ffc92f;
-  background-color: #1b1b1b;;
+  color: var(--yellow);
+  background-color: var(--black);
 }

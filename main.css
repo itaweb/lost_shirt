@@ -23,6 +23,11 @@ body {
   min-width: 1310px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
 body {
   font: 16px / 1.42 "Roboto", Arial, sans-serif;
   color: #212121;
@@ -159,4 +164,34 @@ ul > li {
 .filter__item--active .filter__link {
   color: var(--yellow);
   background-color: var(--black);
+}
+
+.products__item {
+  width: 302px;
+  height: 386px;
+  background: var(--yellow);
+  margin-bottom: 35px;
+}
+
+.products__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.products__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 23px 30px;
+  background: rgba(35, 35, 35, .8);
+}
+
+.products__img {
+  display: block;
+  min-width: 90%;
+  min-height: 70%;
 }

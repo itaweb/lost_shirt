@@ -178,7 +178,27 @@ ul > li {
   background: var(--yellow);
   margin-bottom: 35px;
   list-style-type: none;
-  margin-left: 27px;
+  margin-left: 28px;
+  position: relative;
+}
+
+.products__price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 126px;
+  border-bottom: 45px solid #232323;
+  border-left: 5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-181deg);
+}
+
+.products__price-amount {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--titlesFont);
+  color:#fff;
+  transform: rotate(181deg);
 }
 
 .products__item:hover .products__desc {

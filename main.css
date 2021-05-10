@@ -184,8 +184,8 @@ ul > li {
 
 .products__price {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: -6px;
   width: 126px;
   border-bottom: 45px solid #232323;
   border-left: 5px solid transparent;
@@ -199,6 +199,9 @@ ul > li {
   font-family: var(--titlesFont);
   color:#fff;
   transform: rotate(181deg);
+  position: absolute;
+  top: 2px;
+  right: 28px;
 }
 
 .products__item:hover .products__desc {

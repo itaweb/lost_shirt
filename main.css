@@ -212,6 +212,14 @@ ul > li {
   background: #232323;
 }
 
+.products__item--color-black .products__price {
+  border-bottom-color: var(--yellow);
+}
+
+.products__item--color-black .products__price-amount {
+  color: #212121;
+}
+
 .products__item--size-double {
   width: 630px;
   height: 544px;
